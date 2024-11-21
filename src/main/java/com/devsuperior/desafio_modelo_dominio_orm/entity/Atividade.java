@@ -33,8 +33,7 @@ public class Atividade {
     @JoinColumn(name = "categoria_id")
     private Categoria categoria;
 
-    public Atividade() {
-    }
+    public Atividade() {}
 
     public Atividade(Long id, String nome, String descricao, Double preco) {
         this.id = id;
