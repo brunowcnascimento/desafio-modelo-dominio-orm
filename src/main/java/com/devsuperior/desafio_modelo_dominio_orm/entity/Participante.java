@@ -14,17 +14,17 @@ public class Participante {
     private Long id;
 
     private String nome;
-    private String mail;
+    private String email;
 
     @ManyToMany(mappedBy = "participantes")
     private Set<Atividade> atividade;
 
     public Participante(){}
 
-    public Participante(Long id, String nome, String mail) {
+    public Participante(Long id, String nome, String email) {
         this.id = id;
         this.nome = nome;
-        this.mail = mail;
+        this.email = email;
     }
 
     public Long getId() {
@@ -43,16 +43,12 @@ public class Participante {
         this.nome = nome;
     }
 
-    public String getMail() {
-        return mail;
+    public String geteMail() {
+        return email;
     }
 
-    public void setMail(String mail) {
-        this.mail = mail;
-    }
-
-    public Set<Atividade> getAtividade() {
-        return atividade;
+    public void seteMail(String email) {
+        this.email = email;
     }
 
     @Override
